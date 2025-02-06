@@ -2,6 +2,7 @@
 
 void combat_medic_heal(Unit *self, Unit *target)
 {
+    //if the soldier is already dead, they can no longer be revived
     if (unit_get_health(target) <= 0)
     {
         printf("He is gone...");
